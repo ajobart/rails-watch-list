@@ -1,6 +1,17 @@
-<h1>Watchlist</h1>
-<% @lists.each do |list| %>
-  <%= link_to list.name, list_path(list)  %>
-<% end %>
+<div class="header">
+  <h1>Watchlist</h1>
+</div>
+<div class="second-section">
+  <div class="title">
+    <h1>My category</h1>
+  </div>
+  <div class="lists-container">
+    <% @lists.each do |list| %>
+      <div class="list-card">
+        <%= link_to list.name, list_path(list), class:"category-link"  %>
+      </div>
+    <% end %>
+  </div>
+  <%= link_to 'Add a new list', new_list_path, class:"btn btn-primary add-btn" %>
+</div>
 <br>
-<%= link_to 'Add a new list', new_list_path, class:"btn btn-primary" %>
