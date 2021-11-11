@@ -1,0 +1,8 @@
+<h1>Create your list</h1>
+<%= form_for(@list) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
+<br>
+<%= link_to 'Homepage', lists_path, class:"btn btn-primary" %>
