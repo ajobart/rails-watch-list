@@ -1,0 +1,96 @@
+
+// TITRE
+.show-title {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  background-color: rgb(37, 37, 37);
+}
+
+.show-title h2 {
+  margin: 0;
+}
+
+// BTN CONTAINER
+.show-btn-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// ADD BTN
+.show-add-btn {
+  background-color: white;
+  color: #24DE88;
+  border: solid 3px #24DE88;
+  transition: 0.2s ease-in-out;
+}
+
+.show-add-btn:hover {
+  background-color: #24DE88;
+  color: white;
+  border: solid 3px #24DE88;
+}
+
+// DELETE BTN
+
+.delete {
+  background-color: white;
+  border: 2px solid #FD1A1C;
+  color: #FD1A1C;
+}
+
+.delete:hover {
+  background-color: #FD1A1C;
+  border: 2px solid #FD1A1C;
+  color: white;
+}
+
+.show-btn-list a {
+  margin: 20px;
+}
+
+// BOOKMARK CONTAINER
+.show-bookmark-container {
+  display: grid;
+  text-align: center;
+  grid: auto-flow / 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+// BOOKMARK CARDS
+
+.show-bookmark-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  height: 200px;
+  width: 400px;
+  margin: 20px;
+}
+
+.show-bookmark-card a {
+  position: absolute;
+  font-size: smaller;
+  font-weight: 500;
+  right: 10px;
+  bottom: 10px;
+  background-color: white;
+  border: 2px solid #FD1A1C;
+  color: #FD1A1C;
+}
+
+.show-bookmark-card a:hover {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: #FD1A1C;
+  border: 2px solid #FD1A1C;
+  color: white;
+}
