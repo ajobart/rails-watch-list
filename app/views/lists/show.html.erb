@@ -4,6 +4,7 @@
   </div>
   <div class="show-btn-list">
     <%= link_to "Add a movie",  new_list_bookmark_path(@list), class:"btn btn-primary show-add-btn"%>
+    <%= link_to 'Homepage', lists_path, class:"btn btn-primary home-btn"%>
     <%= link_to "Delete this list",
                 list_path,
                 method: :delete,
