@@ -1,3 +1,6 @@
+<% require "open-uri"
+%>
+
 <div class="main-show">
   <div class="show-title">
     <h2><%= @list.name %></h2>
@@ -14,6 +17,9 @@
   <div class="show-bookmark-container">
     <% @list.bookmarks.each do |bookmark| %>
     <div class="show-bookmark-card">
+      <div class="card-poster">
+        <%= image_tag "#{bookmark.movie.poster_url}"%>
+      </div>
       <div class="card-title">
         <%= bookmark.movie.title %>
       </div>
